@@ -50,6 +50,6 @@ public class EmployeeController {
     @DeleteMapping("/{id}")
     public String deleteEmployee(@PathVariable Long id) {
         repo.deleteById(id);
-        return "Employee deleted successfully";
+        return "Employee deleted successfully , deleted";
     }
 }
